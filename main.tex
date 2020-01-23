@@ -1,0 +1,35 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{array}
+\newcolumntype{C}{>$c<$}
+
+%% Sets page size and margins.
+\usepackage{amsfonts,amssymb}
+\usepackage[margin=1in]{geometry}
+
+
+\title{Math 312\\Theorem 61}
+\author{Chachi Lor}
+\date{}
+
+\begin{document}
+\maketitle
+\underline{Proof.}
+
+Let $x_n$ be a sequence that converges to x. Let $\epsilon > 0$ be given. Choose $N$ such that $d(x, x_n) < \epsilon/2$
+
+for all $n \geq N$. Consider $d(x_n, x_m)$ for all $m, n \geq N$. By triangle inequality,
+
+\begin{center}
+$d(x_n, x_m) \leq d(x, x_n) + d(x, x_m) < \epsilon/2 + \epsilon/2 = \epsilon$.
+\end{center}
+
+Therefore $x_n$ is also a cauchy sequence. $\Box$
+
+\end{document}
